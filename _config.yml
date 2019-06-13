@@ -1,41 +1,244 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Jekyll on ZEIT Now
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  This is an example of Jekyll deployed on ZEIT Now. See the sole post on this example for more information, or see the source to learn how to deploy yourself at github.com/zeit/now-examples
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: zeithq
-github_username:  zeit
-
-# Build settings
-markdown: kramdown
-theme: minima
+title: Supreme Court Judgements
+remote_theme: opendocsg/opendoc-theme@v2
+repository: opendocsg/opendoc-supreme-court-judgments
 plugins:
-  - jekyll-feed
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  - jekyll-include-cache
+baseurl: ''
+server_PROD: 'https://search.opendoc.sg'
+server_DEV: 'https://search-staging.opendoc.sg'
+fast_build: true
+offline_search_only: false
+styling_options:
+  primary_brand_color: '#8B4513'
+  logo_path: /assets/ic-logo.png
+  opendoc_logo_path: /assets/images/logo-full.png
+document_order:
+  - 2019_SGHC_144
+  - 2019_SGHC_143
+  - 2019_SGHC(I)_8
+  - 2019_SGHCF_13
+  - 2019_SGHC_138
+  - 2019_SGHC_134
+  - 2019_SGCA_39
+  - 2019_SGHCF_12
+  - 2019_SGHC_137
+  - 2019_SGCA(I)_1
+  - 2019_SGHC_133
+  - 2019_SGHC_136
+  - 2019_SGHC_135
+  - 2019_SGCA_38
+  - 2019_SGCA_37
+  - 2019_SGHC_132
+  - 2019_SGHC(I)_7
+  - 2019_SGHC_131
+  - 2019_SGHC_130
+  - 2019_SGHC_129
+  - 2019_SGCA_35
+  - 2019_SGHC_123
+  - 2019_SGCA_36
+  - 2019_SGHC_128
+  - 2019_SGHC_127
+  - 2019_SGHC_124
+  - 2019_SGHC_126
+  - 2019_SGHC_125
+  - 2019_SGHC(I)_6
+  - 2019_SGHC_121
+  - 2019_SGCA_33
+  - 2019_SGCA_34
+  - 2019_SGHC_122
+  - 2019_SGHC_120
+  - 2019_SGHC_119
+  - 2019_SGHC_112
+  - 2019_SGHCR_8
+  - 2019_SGHC_118
+  - 2019_SGHCR_7
+  - 2019_SGHCF_10
+  - 2019_SGCA_32
+  - 2019_SGHC_115
+  - 2019_SGHC(I)_5
+  - 2019_SGCA_28
+  - 2019_SGHC_116
+  - 2019_SGHC_117
+  - 2019_SGHC_114
+  - 2019_SGCA_29
+  - 2019_SGCA_31
+  - 2019_SGCA_30
+  - 2019_SGHC_113
+  - 2019_SGHC_109
+  - 2019_SGHC_110
+  - 2019_SGHC_108
+  - 2019_SGHC_111
+  - 2019_SGHC_107
+  - 2019_SGHCF_9
+  - 2019_SGHC_106
+  - 2019_SGCA_27
+  - 2019_SGHC_103
+  - 2019_SGHC_104
+  - 2019_SGHC_101
+  - 2019_SGHCF_8
+  - 2019_SGHC_102
+  - 2019_SGHC_105
+  - 2019_SGHC_96
+  - 2019_SGHC_97
+  - 2019_SGHC_99
+  - 2019_SGHC_98
+  - 2019_SGHC_100
+  - 2019_SGHC_95
+  - 2019_SGHC(I)_4
+  - 2019_SGHC_91
+  - 2019_SGHC_93
+  - 2019_SGHC_94
+  - 2019_SGCA_23
+  - 2019_SGCA_22
+  - 2019_SGCA_26
+  - 2019_SGCA_25
+  - 2019_SGCA_24
+  - 2019_SGHC_92
+  - 2019_SGCA_21
+  - 2019_SGHC_70
+  - 2019_SGHC_88
+  - 2019_SGHC_90
+  - 2019_SGHC_68
+  - 2019_SGHC_89
+  - 2019_SGCA_20
+  - 2019_SGHC_85
+  - 2019_SGHC_87
+  - 2019_SGHC_86
+  - 2019_SGHC_84
+  - 2019_SGHCF_7
+  - 2019_SGHC_81
+  - 2019_SGCA_19
+  - 2019_SGHC_82
+  - 2019_SGHC_83
+  - 2019_SGHC_80
+  - 2019_SGCA_18
+  - 2019_SGHC_77
+  - 2019_SGHC_67
+  - 2019_SGHC_75
+  - 2019_SGHC_78
+  - 2019_SGHC_79
+  - 2019_SGHC_74
+  - 2019_SGHC_76
+  - 2019_SGHC_61
+  - 2019_SGHC_52
+  - 2019_SGCA_17
+  - 2019_SGHC_72
+  - 2019_SGHC_73
+  - 2019_SGHC_69
+  - 2019_SGHC_71
+  - 2019_SGHC(I)_3
+  - 2019_SGHC_64
+  - 2019_SGHC_65
+  - 2019_SGHC_66
+  - 2019_SGHC_49
+  - 2019_SGHC_63
+  - 2019_SGHC(I)_2
+  - 2019_SGHC_62
+  - 2019_SGHC_59
+  - 2019_SGHC_60
+  - 2019_SGHCF_6
+  - 2019_SGCA_16
+  - 2019_SGHC_57
+  - 2019_SGHC_58
+  - 2019_SGHC_50
+  - 2019_SGHC_55
+  - 2019_SGHC_54
+  - 2019_SGHCR_6
+  - 2019_SGHC_56
+  - 2019_SGHC_53
+  - 2019_SGHC_51
+  - 2019_SGHC_48
+  - 2019_SGHC_45
+  - 2019_SGHC_46
+  - 2019_SGHC_44
+  - 2019_SGHC_47
+  - 2019_SGHC_43
+  - 2019_SGHC_42
+  - 2019_SGCA_15
+  - 2019_SGHCR_4
+  - 2019_SGCA_14
+  - 2019_SGCA_13
+  - 2019_SGHC_41
+  - 2019_SGHC_40
+  - 2019_SGCA_12
+  - 2019_SGHC_39
+  - 2019_SGHCR_5
+  - 2019_SGHC_36
+  - 2019_SGHC_38
+  - 2019_SGCA_11
+  - 2019_SGHC_34
+  - 2019_SGHC_37
+  - 2019_SGHC_30
+  - 2019_SGHC_35
+  - 2019_SGHC_31
+  - 2019_SGHC_32
+  - 2019_SGHC_27
+  - 2019_SGHC_33
+  - 2019_SGCA_10
+  - 2019_SGHC_29
+  - 2019_SGHC_28
+  - 2019_SGHC_24
+  - 2019_SGHC_26
+  - 2019_SGHC_23
+  - 2019_SGCA_9
+  - 2019_SGHC_25
+  - 2019_SGHC_21
+  - 2019_SGHC_20
+  - 2019_SGHC_22
+  - 2019_SGHC_19
+  - 2019_SGHC_14
+  - 2019_SGHCF_5
+  - 2019_SGHC_18
+  - 2019_SGHC_16
+  - 2019_SGHC_17
+  - 2019_SGHCR_3
+  - 2019_SGCA_8
+  - 2019_SGHC_15
+  - 2019_SGHC_13
+  - 2019_SGHCF_4
+  - 2019_SGCA_7
+  - 2019_SGHCF_3
+  - 2019_SGHC_6
+  - 2019_SGHC_9
+  - 2019_SGHC_12
+  - 2019_SGHC_8
+  - 2019_SGHC_4
+  - 2019_SGHC_10
+  - 2019_SGHC_11
+  - 2019_SGCA_6
+  - 2019_SGHC_7
+  - 2019_SGHCR_2
+  - 2019_SGCA_5
+  - 2019_SGHC_5
+  - 2019_SGHCF_2
+  - 2019_SGCA_3
+  - 2019_SGHCF_1
+  - 2019_SGCA_4
+  - 2019_SGHC(I)_1
+  - 2019_SGCA_2
+  - 2019_SGCA_1
+  - 2019_SGHC_1
+  - 2018_SGHC_280
+  - 2018_SGHC_277
+  - 2018_SGHC_279
+  - 2019_SGHC_3
+  - 2018_SGHCF_22
+  - 2018_SGHC_276
+  - 2019_SGHCR_1
+  - 2019_SGHC_2
+  - 2018_SGHC_278
+  - 2018_SGHCF_21
+  - 2018_SGHC_272
+  - 2018_SGHC_269
+  - 2018_SGHC_274
+  - 2018_SGHC_275
+  - 2018_SGHC_267
+  - 2018_SGHCF_18
+  - 2018_SGHC_273
+  - 2018_SGHCF_20
+  - 2018_SGHC_271
+  - 2018_SGHC_270
+  - 2018_SGCA_87
+  - 2018_SGHCF_19
+  - 2018_SGHC_264
+  - 2018_SGHC_268
